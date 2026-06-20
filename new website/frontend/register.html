@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Home - Register</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+            background:linear-gradient(135deg,#081120,#151d30,#2d243c);
+        }
+
+        .register-box{
+            width:100%;
+            max-width:500px;
+            background:rgba(20,28,45,.96);
+            border:1px solid rgba(255,255,255,.08);
+            border-radius:24px;
+            padding:40px 30px;
+            box-shadow:0 15px 40px rgba(0,0,0,.35);
+        }
+
+        .logo{
+            text-align:center;
+            margin-bottom:15px;
+        }
+
+        .logo img{
+            width:70px;
+            height:70px;
+            border-radius:50%;
+            object-fit:cover;
+        }
+
+        h1{
+            color:#fff;
+            text-align:center;
+            font-size:40px;
+            margin-bottom:8px;
+        }
+
+        .subtitle{
+            text-align:center;
+            color:#b0b0b0;
+            margin-bottom:30px;
+        }
+
+        .subtitle a{
+            color:#ff9800;
+            text-decoration:none;
+            font-weight:600;
+        }
+
+        input{
+            width:100%;
+            padding:17px;
+            margin-bottom:18px;
+            border:none;
+            outline:none;
+            border-radius:14px;
+            background:#2d374b;
+            color:#fff;
+            font-size:16px;
+            border:1px solid #465168;
+        }
+
+        input::placeholder{
+            color:#b8b8b8;
+        }
+
+        button{
+            width:100%;
+            padding:17px;
+            border:none;
+            border-radius:14px;
+            background:#ff9800;
+            color:#fff;
+            font-size:18px;
+            font-weight:600;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#ffac22;
+        }
+
+        @media(max-width:600px){
+
+            .register-box{
+                padding:30px 20px;
+            }
+
+            h1{
+                font-size:32px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="register-box">
+
+    <div class="logo">
+        <img src="https://res.cloudinary.com/dp0pkoszf/image/upload/v1781939415/png_hbci07.png" alt="Spiritual Home Logo">
+    </div>
+
+    <h1>Create Account</h1>
+
+    <p class="subtitle">
+        Already have an account?
+        <a href="login.html">Login here</a>
+    </p>
+
+    <form action="login.html">
+
+        <input
+            type="text"
+            placeholder="Full Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Email Address"
+            required
+        >
+
+        <input
+            type="password"
+            placeholder="Password"
+            required
+        >
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
